@@ -19,8 +19,10 @@
 		44CFDEB0189C389300238AA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CFDE95189C389300238AA4 /* Foundation.framework */; };
 		44CFDEB1189C389300238AA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CFDE99189C389300238AA4 /* UIKit.framework */; };
 		44CFDEB9189C389300238AA4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44CFDEB7189C389300238AA4 /* InfoPlist.strings */; };
-		4D3DF6271BBDA55E0047AB5C /* FISCardDeckSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DF6251BBDA55E0047AB5C /* FISCardDeckSpec.m */; settings = {ASSET_TAGS = (); }; };
-		4D3DF6281BBDA55E0047AB5C /* FISCardSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DF6261BBDA55E0047AB5C /* FISCardSpec.m */; settings = {ASSET_TAGS = (); }; };
+		4D3DF6271BBDA55E0047AB5C /* FISCardDeckSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DF6251BBDA55E0047AB5C /* FISCardDeckSpec.m */; };
+		4D3DF6281BBDA55E0047AB5C /* FISCardSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DF6261BBDA55E0047AB5C /* FISCardSpec.m */; };
+		A4A197321D12D63700452534 /* FISCard.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A197311D12D63700452534 /* FISCard.m */; };
+		A4A197351D12D64B00452534 /* FISCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A197341D12D64B00452534 /* FISCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		4AE18893FF788BC760F5798D /* Pods-OOP-Cards-ModelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OOP-Cards-ModelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OOP-Cards-ModelTests/Pods-OOP-Cards-ModelTests.release.xcconfig"; sourceTree = "<group>"; };
 		4D3DF6251BBDA55E0047AB5C /* FISCardDeckSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISCardDeckSpec.m; sourceTree = "<group>"; };
 		4D3DF6261BBDA55E0047AB5C /* FISCardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISCardSpec.m; sourceTree = "<group>"; };
+		A4A197301D12D63700452534 /* FISCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISCard.h; sourceTree = "<group>"; };
+		A4A197311D12D63700452534 /* FISCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISCard.m; sourceTree = "<group>"; };
+		A4A197331D12D64B00452534 /* FISCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISCardDeck.h; sourceTree = "<group>"; };
+		A4A197341D12D64B00452534 /* FISCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISCardDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +131,10 @@
 		44CFDE9B189C389300238AA4 /* OOP-Cards-Model */ = {
 			isa = PBXGroup;
 			children = (
+				A4A197331D12D64B00452534 /* FISCardDeck.h */,
+				A4A197341D12D64B00452534 /* FISCardDeck.m */,
+				A4A197301D12D63700452534 /* FISCard.h */,
+				A4A197311D12D63700452534 /* FISCard.m */,
 				44CFDEA4189C389300238AA4 /* FISAppDelegate.h */,
 				44CFDEA5189C389300238AA4 /* FISAppDelegate.m */,
 				44CFDEA7189C389300238AA4 /* Images.xcassets */,
@@ -295,6 +305,8 @@
 			files = (
 				44CFDEA6189C389300238AA4 /* FISAppDelegate.m in Sources */,
 				44CFDEA2189C389300238AA4 /* main.m in Sources */,
+				A4A197321D12D63700452534 /* FISCard.m in Sources */,
+				A4A197351D12D64B00452534 /* FISCardDeck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
