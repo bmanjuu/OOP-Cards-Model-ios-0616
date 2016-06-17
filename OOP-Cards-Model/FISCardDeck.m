@@ -61,8 +61,6 @@
 
 -(void)shuffleRemainingCards{
     
-    //currently not randomizing everything in remaining cards
-
     NSMutableArray *mRemainingCards = [self.remainingCards mutableCopy];
     [self.remainingCards removeAllObjects];
     
@@ -86,7 +84,7 @@
 
 -(NSString *)description{
     
-    NSMutableString *remainingCardsCount = [NSMutableString stringWithFormat:@"count: %li \ncards: \n", [self.remainingCards count]];
+    NSMutableString *remainingCardsCount = [NSMutableString stringWithFormat:@"\ncount: %li \ncards: \n", [self.remainingCards count]];
     
     NSMutableArray *cards = [[NSMutableArray alloc] init];
     
@@ -99,7 +97,7 @@
     
     [remainingCardsCount appendFormat:@"%@", [cards componentsJoinedByString:@" "]];
     
-    NSLog(@"\n\n\n\n\n\n\n\n\n\n%@", remainingCardsCount);
+    // NSLog(@"\n\n\n\n\n\n\n\n\n\n%@", remainingCardsCount);
     
     return remainingCardsCount;
 }
