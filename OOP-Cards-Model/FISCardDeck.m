@@ -91,10 +91,10 @@
     NSMutableArray *cards = [[NSMutableArray alloc] init];
     
     for(FISCard *card in self.remainingCards){
-        [cards addObject:card.cardLabel];
         if([cards count] % 13 == 0){
-            [cards addObject:@"\n"];
-        }
+            [cards addObject:[NSString stringWithFormat:@"\n%@", card.cardLabel]];
+        } else {
+            [cards addObject:card.cardLabel]; }
     }
     
     [remainingCardsCount appendFormat:@"%@", [cards componentsJoinedByString:@" "]];
