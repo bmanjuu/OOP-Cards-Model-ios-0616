@@ -92,12 +92,14 @@
     
     for(FISCard *card in self.remainingCards){
         [cards addObject:card.cardLabel];
-        if([cards count] > 13){
+        if([cards count] % 13 == 0){
             [cards addObject:@"\n"];
         }
     }
     
     [remainingCardsCount appendFormat:@"%@", [cards componentsJoinedByString:@" "]];
+    
+    NSLog(@"\n\n\n\n\n\n\n\n\n\n%@", remainingCardsCount);
     
     return remainingCardsCount;
 }
